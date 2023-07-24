@@ -23,6 +23,10 @@ public class OrderItem implements Serializable {
 	private OrderItemPK id = new OrderItemPK();
 	private Integer quantity;
 	private Double price;
+	
+	public Double getSubTotal() {
+		return price * quantity;
+	}
 
 	public OrderItem() {
 
